@@ -1,5 +1,11 @@
 # Change Log
 
+## [v1.5.1](https://github.com/evanob/auth0-react/tree/v1.5.1) (2021-06-20)
+
+**Added**
+
+- Users can now pass in a pre-instantiated `Auth0Client` instance, which can be utilized in code external to the React lifecycle
+
 ## [v1.5.0](https://github.com/auth0/auth0-react/tree/v1.5.0) (2021-05-05)
 
 **Added**
@@ -41,7 +47,7 @@
 **Added**
 
 - [SDK-2106] Memoize auth methods [\#150](https://github.com/auth0/auth0-react/pull/150) ([adamjmcgrath](https://github.com/adamjmcgrath))
-- Add react fast refresh support [\#151](https://github.com/auth0/auth0-react/pull/151) ([Idered](https://github.com/Idered)) 
+- Add react fast refresh support [\#151](https://github.com/auth0/auth0-react/pull/151) ([Idered](https://github.com/Idered))
 - [SDK-2105] Skip redirect callback option [\#148](https://github.com/auth0/auth0-react/pull/148) ([adamjmcgrath](https://github.com/adamjmcgrath))
 - [SDK-2104] Update peerDeps to account for react 17 [\#147](https://github.com/auth0/auth0-react/pull/147) ([adamjmcgrath](https://github.com/adamjmcgrath))
 - [SDK-1938] Update the user/isAuthenticated state after getting a token  [\#146](https://github.com/auth0/auth0-react/pull/146) ([adamjmcgrath](https://github.com/adamjmcgrath))
