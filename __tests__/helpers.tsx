@@ -6,10 +6,13 @@ export const createWrapper = ({
   clientId = '__test_client_id__',
   domain = '__test_domain__',
   ...opts
-}: Partial<Auth0ClientOptions> = {}) => ({
-  children,
-}: PropsWithChildren<{}>): JSX.Element => (
-  <Auth0Provider domain={domain} clientId={clientId} {...opts}>
-    {children}
-  </Auth0Provider>
-);
+}: Partial<Auth0ClientOptions> = {}) => {
+  const WrappedComponent = ({
+    children,
+  }: PropsWithChildren<{}>): JSX.Element => (
+    <Auth0Provider domain={domain} clientId={clientId} {...opts}>
+      {children}
+    </Auth0Provider>
+  );
+  return WrappedComponent;
+};
